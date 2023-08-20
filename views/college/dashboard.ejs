@@ -1,0 +1,31 @@
+<%- include('../header.ejs')%>
+
+<div class="container-fluid dashboard">
+    <br><br><br><br>
+    <div class="container">
+    <div class="body-content">
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="dash-left">
+                    <ul>
+                        <li class="active"><a  href="/dashboard" class=" btn btn-warning">Dashboard</a></></li>
+                        <li><a class="btn btn-warning" href="/admin/display">   Display    </a></li>
+                        <li><a class="btn btn-warning" href="/admin/contactdisplay">Contact</a></li>
+                        <li><a class="btn btn-warning" href="/logout">Logout</a></li>
+                    </ul>
+                </div>   
+            </div>
+            <div class="col-md-9">
+                <div class="dash-right">
+                    <h1 >Welcome <%= s %> </h1>
+                   
+                    <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+</div>
+</div>
+<%- include('../footer.ejs')%>

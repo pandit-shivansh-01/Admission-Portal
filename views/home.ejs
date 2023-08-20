@@ -1,0 +1,183 @@
+<%- include('header.ejs') %>
+<div class="carousel slide" data-bs-ride="carousel" id="a">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#a" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#a" data-bs-slide-to="1" ></button>
+    <button type="button" data-bs-target="#a" data-bs-slide-to="2" ></button>
+  </div>
+  
+  
+  
+  <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+          <div class="banner-box">
+              <img src="/images/A.jpg" class="w-100" height="800px" alt="...">
+          </div>
+    </div>0
+
+    <div class="carousel-item" data-bs-interval="2000">
+          <div class="banner-box">
+             
+              <img src="/images/A.webp" class="w-100" height="800px" alt="...">
+          </div>
+    </div>1
+
+    <div class="carousel-item" data-bs-interval="2000">
+          <img src="/images/d.jpg" class="w-100" height="800px" alt="...">
+      </div>
+</div>2
+  </div>  
+      
+      
+  <button class="carousel-control-prev" type="button" data-bs-target="#a" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#a" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div><!--carousel end-->
+
+<div class="container-fluid why">
+  <div class="container">
+<div class="row">
+  <h1 class="title">Hey! <%=s%> </h1>
+  <h1 >REGISTER YOUR COURSE</h1>
+
+  <h4>Course Registration means the official recording of a student's name to study a course or courses.</h4>
+  <br><br><br>
+  <div class="col-md-4 mb-5 ">
+      <div class="card a">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <img src="/images/btech.jpg" class="img-fluid"/>
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">B.tech</h5>
+          <p class="card-text">B.Tech is a professional undergraduate<br> engineering degree</p>
+          <% if(bt) { %>
+            <a href="/register/btechdisplay" class="btn btn-info" style="background-color: #F9A826; color: white;">Display</a>
+          <% } else {%>
+            <a href="/register/btech" class="btn btn-info" style="background-color: #F9A826; color: white;">Register</a>
+            <% } %>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-4 mb-5 ">
+
+
+        <div class="card a">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="/images/bba.jpeg" class="img-fluid"/>
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">BBA</h5>
+            <p class="card-text">BCA is a three-year Bachelor of <br>Business Administration</p>
+            <% if(bt) { %>
+              <a href="/register/bbadisplay" class="btn btn-info" style="background-color: #F9A826; color: white;">Display</a>
+            <% } else {%>
+              <a href="/register/bba" class="btn btn-info" style="background-color: #F9A826; color: white;">Register</a>
+              <% } %>
+          </div>
+        </div>
+      <br><br>
+  </div>
+  <div class="col-md-4 mb-5 ">
+      
+
+
+        <div class="card a">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="/images/bca.jpeg" class="img-fluid"/>
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">BCA</h5>
+            <p class="card-text">BCA is one of the most popular graduate <br>courses in India and abroad.</p>
+            <% if(bt) { %>
+              <a href="/register/bcadisplay" class="btn btn-info" style="background-color: #F9A826; color: white;">Display</a>
+            <% } else {%>
+              <a href="/register/bca" class="btn btn-info" style="background-color: #F9A826; color: white;">Register</a>
+              <% } %>
+          </div>
+        </div>
+      <br><br>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid why1 mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="/images/icon1.png"class="b"> 
+      <h3 class="text-center">JOIN TODAY</h3>
+      <br>
+      <p class="text-center">You Can Apply Online for Admission</p>
+    </div>
+    <div class="col-md-4">
+      <img src="/images/icon2.png" class="b">
+     
+      <h3 class="text-center"> Apply Online for Degree</h3>
+      <br>
+      <p class="text-center">Click here to online apply for Degree</p>
+    </div>
+    <div class="col-md-4">
+      <img src="/images/icon1.png" class="b">
+      
+      <h3 class="text-center">Apply for Police ITI Courses</h3>
+      <br>
+      <p class="text-center">Click here to online apply for Degree</p>
+    </div> 
+   </div> 
+</div> <!-- container fluid div end -->
+
+
+
+<br><br><br>
+<div class="container-fluid  shiva">
+  <div class="container">
+    <div class="row">
+        <h1 class="title text-center">OUR STARTUPS</h1>
+        <br><br><br><br><br><br>
+        <div class="col-md-3 c">
+          <img src="/images/startup1.jpg" class="mt-4" >
+          <h3 class="text-center mt-4">INSIGHTFUL TALKS</h3>
+          <h6 class="text-center">INSIGHTFUL TALKS</h6>
+          <p>Insightful talks began in 2018 as conference where Technology, entertainment and design converged. We cover almost every area of human thinking from science to business to global issues. Our platform is devoted to spreading ideas.</p>
+        </div>
+        <div class="col-md-3 c">
+          <img src="/images/startup2.jpg" class="mt-4"  >
+           <h3 class="text-center mt-4">Spanshots</h3>
+          <h6 class="text-center">Spanshots </h6>
+          <p>Spanshots is the world’s first App/Web motion picture-sharing and social networking service that enables its users to take motion pictures and share them on Facebook with their friends.</p>
+        </div>
+        <div class="col-md-3 c">
+          <img src="/images/startup3.jpg" class="mt-4">
+           <h3 class="text-center mt-4">GYANSHALA</h3>
+          <h6 class="text-center">GYANSHALA</h6>
+          <p>GyanShala is a firm specializing in Training, Workshop, Development, on-campus cultural program and CRT based programs. We offer pre-placement training for engineers, corporate training for executives, voice & accent training to teachers and other faculty development programs.</p>
+        </div>
+        <div class="col-md-3 c">
+          <img src="/images/startup4.jpg" class="mt-4">
+           <h3 class="text-center mt-4">DOORSTEPSHOPPEE</h3>
+          <h6 class="text-center">DOORSTEPSHOPPEE</h6>
+          <p>Doorstepshoppee Services Private Limited is an online e-commerce company which aims to revolutionize the current trade and purchase scenario with its dynamic website/app. Now you can order anything without leaving the comfort of your home.</p>
+        </div>
+    </div>
+  </div>
+</div> <!-- container fluid div end-->
+<br><br><br><br>
+    
+
+
+  
+<%- include('footer.ejs') %>

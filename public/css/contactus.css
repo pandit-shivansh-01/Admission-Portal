@@ -1,0 +1,42 @@
+/*two horizontal lines between heading start*/
+.title::before, .title::after{
+	content: "";
+	height: 2px;
+	background-color: #000;
+	display: block;
+}
+.title{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	column-gap: 1.6 rem;
+	font-family: cursive;
+}
+/*two horizontal lines between heading end*/
+
+.p3{
+	height: 250px;
+}
+.banner{
+	background-image: url(../images/contactus/college.jpg);
+	background-size: cover;
+    background-position: center;
+    height: 750px;
+    width: 100%;
+}
+.infra{
+	color: white;
+	font-weight: bold;
+	font-size: 100px;
+	font-family: sans-serif;
+	margin-top: 300px;
+	text-shadow: 10px;
+	text-align: center;
+}
+.form{
+	background-image:linear-gradient(123deg, rgba(255, 255, 255,0.8)50%,transparent 50%), url(../images/contactus/contact.jpg) ;
+	background-size: cover;
+    background-position: center;
+    height: 750px;
+    width: 100%;
+}

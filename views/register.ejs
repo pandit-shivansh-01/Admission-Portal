@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/favicon.ico">
+
+  <title>LoginPortal</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="/css/style.css" rel="stylesheet">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!--font awesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+  
+</head>
+<body>
+
+    <div class="container register ">
+      <div class="row ">
+     
+
+          <div class="col-md-6 register-box ">
+            <br><br>
+            <img src="/images/logo.png" style="margin-left:  225px; padding: auto; height: 30%; width: 30%;" alt="no-img">
+            <h1 class="text-center text-black" style="font-size:50px ; text-align:center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; " > Sign Up </h1>
+            <br>
+            <% if(message.length>0) { %>
+              <div class="alert alert-danger">
+                <%= message %>
+              </div>
+              <% } %>
+            <form  method="post" enctype="multipart/form-data" action="/adminregister">
+              <!-- <div class="form-group" >
+                <input type="text" name="name" class="form-control" placeholder="Name">
+              </div> -->
+
+              <div class="d-flex flex-row align-items-center mb-4">
+                <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                <div class="form-outline flex-fill mb-0">
+                  <input type="text" name="name"  class="form-control" placeholder="Name" />
+                </div>
+              </div>
+             
+              <!-- <div class="form-group">
+                <input type="text" name="email" class="form-control" placeholder="E-Mail">
+              </div> -->
+
+
+              <div class="d-flex flex-row align-items-center mb-4">
+                <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                <div class="form-outline flex-fill mb-0">
+                  <input type="email" name="email" class="form-control" placeholder="E-Mail" />
+                </div>
+              </div>
+             
+              <!-- <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password">
+              </div> -->
+
+
+              <div class="d-flex flex-row align-items-center mb-4">
+                <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                <div class="form-outline flex-fill mb-0">
+                  <input type="password" name="password" class="form-control" placeholder="Password" />
+                </div>
+              </div>
+            
+              <!-- <div class="form-group">
+                <input type="password" name="cpassword" class="form-control" placeholder=" Confirm Password">
+              </div> -->
+
+              <div class="d-flex flex-row align-items-center mb-4">
+                <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                <div class="form-outline flex-fill mb-0">
+                  <input type="password" name="cpassword" class="form-control" placeholder=" Confirm Password" />
+                </div>
+              </div>
+            
+              <div class="form-group">
+                <input type="file" name="image" class="form-control" placeholder="Insert Image: ">
+              </div>
+              <br>
+
+              <div class="form-check d-flex  ">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                <label class="form-check-label" for="form2Example3">
+                  I agree all statements in <a href="#!">Terms of service</a>
+                </label>
+              </div>
+              <br>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary" style="background-color: #F9A826;">Submit</button>
+                <br><br>
+                <h6>Have An Account ?<a href="/">Do Login :)</a></h6>
+              </div>
+              <br><br><br>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <br><br><br>
+            <img src="/images/register.svg" style="height: 80%;" width="100%">
+          </div>
+      
+        
+      </div>
+    </div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

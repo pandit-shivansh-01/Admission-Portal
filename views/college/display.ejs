@@ -1,0 +1,99 @@
+<%- include('../header.ejs')%>
+
+<div class="container-fluid dashboard">
+    <br><br><br><br>
+    <div class="container">
+    <div class="body-content">
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="dash-left">
+                    <ul>
+                        <li class="active"><a  href="/admin/dashboard" class=" btn btn-warning">Dashboard</a></></li>
+                        <li><a class="btn btn-warning" href="/admin/Registerdisplay">   Display    </a></li>
+                        <li><a class="btn btn-warning" href="/admin/contactdisplay">Contact</a></li>
+                        <li><a class="btn btn-warning" href="/logout">Logout</a></li>
+                    </ul>
+                </div>   
+            </div>
+            <div class="col-md-9">
+                <div class="dash-right">
+                    <table class="table table-bordered table-striped "style="margin-top:20px">
+                        <tr class="bg-secondary">
+                            <th>Serial.no</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>gender</th>
+                            <th>DOB</th>
+                            <th>Address</th>
+                            <th>College</th>
+                            <th>Course</th>
+                            <th>Branch</th> 
+                            <th>status</th>
+                            <th>comments</th>
+                            <th>Action</th>
+                            
+                        </tr>
+                        <% i=1 %>
+                
+                            <% f.forEach((b)=>{ %>
+                                <tr class="bg-warning">
+                                    <td>
+                                        <%= i++ %>
+                                    </td>
+                                    <td>
+                                        <%= b.name %>
+                                    </td>
+                                    <td>
+                                        <%= b.email %>
+                                    </td>
+                                    <td>
+                                        <%= b.phone %>
+                                    </td>
+                                    <td>
+                                        <%= b.gender %>
+                                    </td>
+                                    <td>
+                                        <%= b.date%>
+                                    </td>
+                                    <td>
+                                        <%= b.address%>
+                                    </td>
+                                    <td>
+                                        <%= b.college%>
+                                    </td>
+                                    <td>
+                                        <%= b.course%>
+                                    </td>
+                                    <td>
+                                        <%= b.branch%>
+                                        
+                                    </td>
+                                    <td>
+                                        <%= b.status%>
+                                        
+                                    </td>
+                                    <td>
+                                        <form method="post" action="/update_approve/<%=b._id%>">
+                                            <textarea name="comment"></textarea>
+                                   
+                                    </td>
+                
+                                    <td>
+                                       
+                                            <button class="btn btn-secondary bg-success text-black" value="approved" name="status">Approved</button>
+                                            <a href="" class="btn btn-secondary bg-danger text-black" value="rejected" name="status">Rejected</a>
+                                    </form>
+                                   
+                                    </td>
+                                    <% }) %>
+                    </table>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+</div>
+</div>
+<%- include('../footer.ejs')%>
